@@ -4,6 +4,9 @@ machine:
   timezone:
     Europe/Athens # Set the timezone
 
-  machine:
-    php:
+  php:
       version: 7.0.4
+
+test:
+  override:
+    - ./test.sh
