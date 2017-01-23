@@ -2,4 +2,4 @@
 
 echo "TEST ok"
 
-exit;
+exit

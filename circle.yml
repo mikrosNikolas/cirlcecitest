@@ -11,3 +11,8 @@ test:
   override:
     - php test.php
     - sh test.sh
+  after_success: 
+    - "sh success.sh"
+
+#  after_fail:
+#    - "sh more-hacking.sh"
