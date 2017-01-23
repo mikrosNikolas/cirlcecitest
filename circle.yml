@@ -8,8 +8,8 @@ machine:
   php:
       version: 7.0.4
 
-enviroment:
-  GIT_MESSAGE: "git message....."
+  enviroment:
+    GIT_MESSAGE: "git message....."
 
 test:
 
