@@ -19,5 +19,4 @@ deployment:
     tag: nickhook
     owner: circleci
     commands:
-      - sh commit-releas.sh
-      - echo "deployment ok"
+      - sh commit-release.sh
