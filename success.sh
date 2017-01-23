@@ -7,7 +7,6 @@ date
 echo "Testing"
 echo $CIRCLE_TAG
 
-
 if [ $CIRCLE_BRANCH != "test-new-branch" ]; then
 
 	exit 0;
