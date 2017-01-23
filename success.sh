@@ -27,7 +27,7 @@ git add -A
 
 git commit -a -m "CHANGED releases"
 
-git push origin releases
+git push origin master
 
 
 ISMERGECOMMIT=$(git show --format=%P $CIRCLE_SHA1 | awk '{print NF}' | head -n 1)
