@@ -10,9 +10,14 @@ COMMIT_MESSAGE=$(git log --format=%B -n 1 $CIRCLE_SHA1)
 
 echo "Commit: " $COMMIT_MESSAGE
 
+cd ../
 
+git clone https://github.com/ScientificRevenue/sdk_release
 
 pwd
+
+ls
+
 
 
 
