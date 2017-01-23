@@ -15,6 +15,7 @@ test:
 
 deployment:
   release:
+    branch: test-new-branch
     tag: nickhook
     owner: circleci
     commands:
