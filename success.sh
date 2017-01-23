@@ -8,6 +8,12 @@ if [ $CIRCLE_BRANCH != "test-new-branch" ]; then
 
 fi
 
+if [[ ! -z $CI_PULL_REQUEST ]] ; then
+
+	echo "IS PULL REQUES" ; 
+
+fi
+
 echo "in $CIRCLE_BRANCH"
 
 exit
