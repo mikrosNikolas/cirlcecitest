@@ -12,12 +12,19 @@ echo "Commit: " $COMMIT_MESSAGE
 
 cd ../
 
-git clone https://github.com/ScientificRevenue/sdk_release
+git clone https://github.com/mikrosNikolas/releases
+
+cd releases
 
 pwd
 
-ls
+echo $(date) >> updates
 
+git add -A 
+
+git commit -a -m "CHANGED releases"
+
+git push origin releases
 
 
 
