@@ -12,6 +12,8 @@ echo "Commit: " $COMMIT_MESSAGE
 
 
 
+pwd
+
 
 
 ISMERGECOMMIT=$(git show --format=%P $CIRCLE_SHA1 | awk '{print NF}' | head -n 1)
