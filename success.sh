@@ -21,6 +21,14 @@ git cat-file -p $CIRCLE_SHA1
 echo
 
 git cat-file -p $CIRCLE_SHA1 | grep parent
+git cat-file -p $CIRCLE_SHA1 | grep parent | wc -l
+
+
+echo "dump out"
+git show --summary --format="%P" $CIRCLE_SHA1
+
+git show --summary --format="%P" $CIRCLE_SHA1 | wc -l
+
 
 if [ $CIRCLE_BRANCH != "test-new-branch" ]; then
 
