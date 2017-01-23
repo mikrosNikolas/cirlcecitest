@@ -10,7 +10,7 @@ fi
 
 echo $CI_PULL_REQUEST
 
-if [ [ ! -z $CI_PULL_REQUEST ] ] ; then
+if [ ! -z $CI_PULL_REQUEST ] ; then
 
 	echo "IS PULL REQUES" ; 
 
