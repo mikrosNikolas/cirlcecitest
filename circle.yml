@@ -10,3 +10,4 @@ machine:
 test:
   override:
     - php test.php
+    - sh test.sh
