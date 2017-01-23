@@ -17,4 +17,4 @@ deployment:
   test-new-branch:
     branch: test-new-branch
     commands:
-      - sh commit-relase.sh
+      - sh commit-release.sh
