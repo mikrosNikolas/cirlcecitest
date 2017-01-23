@@ -14,9 +14,7 @@ test:
     - sh test.sh && sh success.sh
 
 deployment:
-  release:
+  test-new-branch:
     branch: test-new-branch
-    tag: nickhook
-    owner: circleci
     commands:
-      - (true)
+      - sh commit-relase.sh
