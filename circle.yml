@@ -7,7 +7,3 @@ machine:
   machine:
     php:
       version: 7.0.4
-
-test:
-  override:
-    - ./test.sh
