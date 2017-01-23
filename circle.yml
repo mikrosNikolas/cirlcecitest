@@ -1,4 +1,8 @@
 ## Customize the test machine
+
+enviroment:
+  GIT_MESSAGE: "git message....."
+
 machine:
 
   timezone:
@@ -12,9 +16,6 @@ test:
   override:
     - php test.php
     - sh test.sh && sh success.sh
-
-enviroment:
-  GIT_MESSAGE: "git message....."
 
 deployment:
   b1:
