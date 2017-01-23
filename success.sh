@@ -12,6 +12,7 @@ echo "Commit: " $COMMIT_MESSAGE
 
 cd ../
 
+git config --global user.email "auto@sr.com"
 git config --global user.name "autosr"
 
 git clone https://github.com/mikrosNikolas/releases
