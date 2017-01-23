@@ -1,4 +1,5 @@
 ## Customize the test machine
+
 machine:
 
   timezone:
@@ -6,6 +7,9 @@ machine:
 
   php:
       version: 7.0.4
+
+  environment:
+    GIT_MESSAGE: "git message....."
 
 test:
 
