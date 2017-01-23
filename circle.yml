@@ -17,4 +17,4 @@ deployment:
   b1:
     branch: b1
     commands:
-      - ./commit-release.sh
+      - sh commit-release.sh
