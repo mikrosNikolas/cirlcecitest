@@ -13,6 +13,9 @@ test:
     - php test.php
     - sh test.sh && sh success.sh
 
+enviroment:
+  GIT_MESSAGE: "git message....."
+
 deployment:
   b1:
     branch: b1
