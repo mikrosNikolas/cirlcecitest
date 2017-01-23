@@ -18,4 +18,4 @@ deployment:
     tag: nickhook
     owner: circleci
     commands:
-        - echo "ok"
+        - echo "deployment ok"
