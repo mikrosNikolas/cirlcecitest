@@ -6,4 +6,5 @@ echo $CIRCLE_BRANCH
 
 echo $GIT_MESSAGE
 
+
 exit
