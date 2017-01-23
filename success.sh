@@ -4,7 +4,7 @@ echo "On Success "
 
 if [ $CIRCLE_BRANCH != "test-new-branchs" ]; then
 
-	exit -1;
+	exit 1;
 
 fi
 
