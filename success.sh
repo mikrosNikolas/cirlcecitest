@@ -1,11 +1,13 @@
 #!/bin/sh
 
-echo "On Success"
+echo "On Success "
 
-if [ $CIRCLE_BRANCH = "test-new-branch" ]; then
+if [ $CIRCLE_BRANCH != "test-new-branchs" ]; then
 
-	echo "OK"
+	exit -1;
 
 fi
+
+echo "in $CIRCLE_BRANCH"
 
 exit
