@@ -12,7 +12,11 @@ echo $CI_PULL_REQUEST
 
 if [ ! -z $CI_PULL_REQUEST ] ; then
 
-	echo "IS PULL REQUES" ; 
+	echo "IS PULL REQUEST"
+
+else
+
+	echo "IS NOT PULL REQUEST"
 
 fi
 
