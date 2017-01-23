@@ -6,6 +6,10 @@ if [ $CIRCLE_BRANCH != "test-new-branch" ]; then
 
 	exit 1;
 
+else
+
+	echo $CIRCLE_BRANCH
+
 fi
 
 echo $CI_PULL_REQUEST
