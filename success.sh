@@ -9,6 +9,8 @@ echo $CIRCLE_TAG
 
 echo $CIRCLE_BRANCH
 
+echo $GIT_MESSAGE
+
 if [ $CIRCLE_BRANCH != "test-new-branch" ]; then
 
 	exit 0;
