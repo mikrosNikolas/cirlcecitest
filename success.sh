@@ -14,6 +14,10 @@ if [ ! -z $CI_PULL_REQUEST ] ; then
 
 	echo "IS PULL REQUEST"
 
+	echo $CIRCLE_ARTIFACTS
+
+	ls $CIRCLE_ARTIFACTS
+
 else
 
 	echo "IS NOT PULL REQUEST"
