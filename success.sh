@@ -33,7 +33,6 @@ if [ $ISMERGECOMMIT -eq 1 ]; then
 	exit
 fi
 
-
 echo $CIRCLE_BRANCH
 
 echo $CI_PULL_REQUEST
