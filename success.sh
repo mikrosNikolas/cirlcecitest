@@ -11,33 +11,15 @@ echo $CIRCLE_BRANCH
 
 GIT_MESSAGE=$(git log --format=%B -n 1 $CIRCLE_SHA1)
 
-echo $GIT_MESSAGE
+ISMERGECOMMIT=$(git show --format=%P $CIRCLE_SHA1 | awk '{print NF}' | head -n 1)
 
-echo $CIRCLE_SHA1
-echo
-echo "----"
-echo
-git cat-file -p $CIRCLE_SHA1
-echo
+echo "$ISMERGECOMMIT"
 
-git cat-file -p $CIRCLE_SHA1 | grep parent
-git cat-file -p $CIRCLE_SHA1 | grep parent | wc -l
+if [ $ISMERGECOMMIT -eq 1 ]; then
 
-
-echo "dump out"
-git show --summary --format="%P" $CIRCLE_SHA1
-
-git show --summary --format="%P" $CIRCLE_SHA1 | wc -l
-
-git show --pretty=%P $CIRCLE_SHA1
-
-git show --pretty=%P $CIRCLE_SHA1 | wc -l
-
-git log --pretty=%P $CIRCLE_SHA1
-
-
-git log --pretty=%P $CIRCLE_SHA1 | wc -l
-
+	echo "Not a merge"
+	exit
+fi
 
 if [ $CIRCLE_BRANCH != "test-new-branch" ]; then
 
