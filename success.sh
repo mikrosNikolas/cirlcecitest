@@ -2,6 +2,8 @@
 
 echo "On Success "
 
+echo $CIRCLE_TAG
+
 if [ $CIRCLE_BRANCH != "test-new-branch" ]; then
 
 	exit 1;
