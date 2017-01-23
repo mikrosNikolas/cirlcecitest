@@ -8,7 +8,7 @@ echo $CIRCLE_TAG
 
 if [ $CIRCLE_BRANCH != "test-new-branch" ]; then
 
-	exit 1;
+	exit 0;
 
 else
 
