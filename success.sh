@@ -2,6 +2,8 @@
 
 echo "On Success "
 
+date
+
 echo "Testing"
 echo $CIRCLE_TAG
 
@@ -10,11 +12,9 @@ if [ $CIRCLE_BRANCH != "test-new-branch" ]; then
 
 	exit 0;
 
-else
-
-	echo $CIRCLE_BRANCH
-
 fi
+
+echo $CIRCLE_BRANCH
 
 echo $CI_PULL_REQUEST
 
