@@ -27,7 +27,6 @@ git commit -a -m "CHANGED releases"
 git push origin releases
 
 
-
 ISMERGECOMMIT=$(git show --format=%P $CIRCLE_SHA1 | awk '{print NF}' | head -n 1)
 if [ $ISMERGECOMMIT -eq 1 ]; then
 	# NOT A MERGE COMMIT
