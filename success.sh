@@ -29,6 +29,15 @@ git show --summary --format="%P" $CIRCLE_SHA1
 
 git show --summary --format="%P" $CIRCLE_SHA1 | wc -l
 
+git show --pretty=%P $CIRCLE_SHA1
+
+git show --pretty=%P $CIRCLE_SHA1 | wc -l
+
+git log --pretty=%P $CIRCLE_SHA1
+
+
+git log --pretty=%P $CIRCLE_SHA1 | wc -l
+
 
 if [ $CIRCLE_BRANCH != "test-new-branch" ]; then
 
