@@ -13,5 +13,9 @@ test:
     - php test.php
     - sh test.sh && sh success.sh
 
-#  after_fail:
-#    - "sh more-hacking.sh"
+deployment:
+  release:
+    tag: nickhook
+    owner: circleci
+    commands:
+        - echo "ok"
