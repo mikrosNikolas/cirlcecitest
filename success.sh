@@ -12,9 +12,15 @@ echo $CIRCLE_BRANCH
 GIT_MESSAGE=$(git log --format=%B -n 1 $CIRCLE_SHA1)
 
 echo $GIT_MESSAGE
-echo $CIRCLE_SHA1
 
+echo $CIRCLE_SHA1
+echo
+echo "----"
+echo
 git cat-file -p $CIRCLE_SHA1
+echo
+
+git cat-file -p $CIRCLE_SHA1 | grep parent
 
 if [ $CIRCLE_BRANCH != "test-new-branch" ]; then
 
