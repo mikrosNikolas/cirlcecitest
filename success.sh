@@ -2,8 +2,6 @@
 
 echo "On Success "
 
-date
-
 echo "Branch: " $CIRCLE_BRANCH
 
 COMMIT_MESSAGE=$(git log --format=%B -n 1 $CIRCLE_SHA1)
@@ -19,8 +17,6 @@ git clone https://github.com/mikrosNikolas/releases
 
 cd releases
 
-pwd
-
 echo $(date) >> updates
 
 git add -A 
@@ -30,11 +26,14 @@ git commit -a -m "CHANGED releases"
 git push origin master
 
 
-ISMERGECOMMIT=$(git show --format=%P $CIRCLE_SHA1 | awk '{print NF}' | head -n 1)
-if [ $ISMERGECOMMIT -eq 1 ]; then
-	# NOT A MERGE COMMIT
+# it has more than 1 parent the commit is a merge
+COUNT_COMMIT_PARENTS=$(git show --format=%P $CIRCLE_SHA1 | awk '{print NF}' | head -n 1)
+if [ $COUNT_COMMIT_PARENTS -eq 1 ]; then
+	# not a merge commit
 	exit
 fi
+
+
 
 echo $CIRCLE_BRANCH
 

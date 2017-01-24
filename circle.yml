@@ -8,9 +8,6 @@ machine:
   php:
       version: 7.0.4
 
-  environment:
-    GIT_MESSAGE: git log --format=%B -n 1 $CIRCLE_SHA1
-
 test:
 
   override:
