@@ -1,0 +1,12 @@
+## Customize the test machine
+
+test:
+
+  override:
+    - sh success.sh && echo "OK"
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - sh commit-release.sh
